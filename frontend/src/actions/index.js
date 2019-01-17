@@ -40,7 +40,7 @@ export const loginUser = (user) => {
         dispatch({ type: CLEAR_ERROR });
         dispatch({ type: CLEAR_REDIRECT });
         axios
-          .post("https://cspt1knowledgerocket.herokuapp.com/login/", user)
+          .post("\login/", user)
           .then(response => {
             const token = response.data.token
             localStorage.setItem('token', token);

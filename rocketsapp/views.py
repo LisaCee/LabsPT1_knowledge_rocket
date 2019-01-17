@@ -125,3 +125,12 @@ class GetUser(generics.CreateAPIView):
         username = request.user.username
         email = request.user.email
         return JsonResponse({'username': username, 'email': email})
+
+class UpdateUser(generics.CreateAPIView):
+    serializer_class = RegisterUserSerializer
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def post(self, request):
+        username = request.data.get("username")
+        email = request.data.get("email")
+        is_premium = request.data.get('is_premium')
