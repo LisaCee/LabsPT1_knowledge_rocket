@@ -11,14 +11,14 @@ import { getRockets } from "../actions";
 
 class Rocket extends Component {
   state = {
-    className: "",
+    className: ""
   };
 
   handleRocket = () => {
     const token = localStorage.getItem("token");
-    const className = this.state
+    const className = this.state;
     this.props.getRockets(token, className);
-    this.setState({ className: ''})
+    this.setState({ className: "" });
   };
 
   componentWillMount() {
@@ -37,29 +37,34 @@ class Rocket extends Component {
             <SidebarNav />
           </Col>
           <Col>
-          <Row>
-            <Col>
-            <h1>Rockets</h1>
-            </Col>
-          </Row>
-          <Input
-                  type="className"
-                  name="className"
-                  value={this.state.className}
-                  onChange={this.handleInputChange}
-                  placeholder="ClassName"
-                  />
-                  <Button onClick = {this.handleRocket}> Get Rockets</Button>
             <Row>
-              {this.props.state.rockets && 
+              <Col>
+                <h1>Rockets</h1>
+              </Col>
+            </Row>
+            <Input
+              type="className"
+              name="className"
+              value={this.state.className}
+              onChange={this.handleInputChange}
+              placeholder="ClassName"
+            />
+            <Button onClick={this.handleRocket}> Get Rockets</Button>
+            <Row>
+              {this.props.state.rockets &&
                 this.props.state.rockets.map(unit => (
-                  <Col md="4" sm="6" xs="12" className="mb-4">
+                  <Col
+                    md="4"
+                    sm="6"
+                    xs={{ size: 10, offset: 1 }}
+                    className="mb-4"
+                  >
                     <Card body>
                       <CardTitle className="text-center">
                         {unit.rocketName}
                       </CardTitle>
                       <CardTitle className="text-center">
-                        { unit.className }
+                        {unit.className}
                       </CardTitle>
                       <Link to={"/createRocket"}>
                         <button>Edit</button>
@@ -68,11 +73,16 @@ class Rocket extends Component {
                   </Col>
                 ))}
 
-              <Col md="4" sm="6" xs="12" className="mb-4 addRocket">
+              <Col
+                md="4"
+                sm="6"
+                xs={{ size: 10, offset: 1 }}
+                className="mb-4 addRocket"
+              >
                 <Card body>
                   <CardTitle className="text-center">New Rocket</CardTitle>
                   <Link to={"/createRocket"}>
-                    <img className="card-img" src={add_icon} alt="Add Rocket" />
+                    <i class="fas fa-plus-circle" />
                   </Link>
                 </Card>
               </Col>

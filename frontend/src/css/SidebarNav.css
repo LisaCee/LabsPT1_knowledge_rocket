@@ -1,19 +1,24 @@
 
 .sidebar {
     display: flex;
-    right: 50%;
+    /* right: 50%; */
     align-items: flex-start;
-    border-radius: 35px;
+    border-radius: 25px;
     margin-bottom: 15px;
 }
-a.nav-link {
-    border-radius: 35px
 
+a.nav-link {
+    /* border-radius: 35px; */
+    font-size: 1rem;
+    background-color: white;
 }
 a.nav-link:hover {
     color: white !important;
     background-color: #ff7400;
     border-radius: 10px;
+}
+.navbar-brand {
+    font-weight: bolder;
 }
 
 @media (min-width: 992px) {

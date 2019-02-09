@@ -1,6 +1,9 @@
 * {
-  background-color: #e6e6e6;
   line-height: 1.25;
+}
+
+body {
+  background-color: #e6e6e6;
 }
 
 .App {
@@ -12,7 +15,7 @@
 
 header {
   margin-top: 5rem;
-} 
+}
 
 #rocket {
   display: none;
@@ -26,6 +29,7 @@ header {
 .cta-container {
   margin-top: 1.25rem;
 }
+
 .cta-container div {
   font-size: 1.75rem;
   font-family: "Righteous", cursive;
@@ -45,7 +49,6 @@ button.btn.btn-secondary {
 }
 
 button.btn:hover {
-  width: 110%;
   background-color: white;
   border-color: #ff7400;
   color: #ff7400;

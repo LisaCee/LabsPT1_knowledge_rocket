@@ -1,16 +1,33 @@
-@media (min-width: 992px) {
-    h2 {
-        width: 100%;
-        text-align: center;
-        color: #ff7400;
-        font-family: "Righteous", cursive;
-        padding: 5%;
-        font-size: 4em;
-    }
-    
-    form {
-        background-color: white;
-        padding: 2%;
-        min-width: 60%;
-    }
-}
+ h2 {
+     width: 100%;
+     text-align: center;
+     color: #ff7400;
+     font-family: "Righteous", cursive;
+     padding: 5%;
+     font-size: 2em;
+ }
+
+ form {
+     height: 10rem;
+     background-color: white;
+     padding: 2%;
+ }
+
+ input.form-control {
+     margin: 1.5rem auto;
+ }
+ @media (min-width: 992px) {
+     h2 {
+         width: 100%;
+         text-align: center;
+         color: #ff7400;
+         font-family: "Righteous", cursive;
+         padding: 5%;
+         font-size: 4em;
+     }
+     form {
+         background-color: white;
+         padding: 2%;
+         min-width: 60%;
+     }
+ }
