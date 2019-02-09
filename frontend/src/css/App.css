@@ -1,8 +1,57 @@
-.page-container {
+* {
   background-color: #e6e6e6;
+  line-height: 1.25;
 }
-@media (min-width: 992px) {
 
+.App {
+  min-height: 94vh;
+  min-width: 94vw;
+  padding: 3%;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 5rem;
+} 
+
+#rocket {
+  display: none;
+}
+
+.row h1 {
+  text-align: center;
+  font-family: "Righteous", cursive;
+}
+
+.cta-container {
+  margin-top: 1.25rem;
+}
+.cta-container div {
+  font-size: 1.75rem;
+  font-family: "Righteous", cursive;
+  color: #17a2b8;
+  margin: 1.2rem 0;
+}
+
+button.btn.btn-secondary {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #ff7400;
+  border-color: transparent;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 2%;
+}
+
+button.btn:hover {
+  width: 110%;
+  background-color: white;
+  border-color: #ff7400;
+  color: #ff7400;
+}
+
+@media (min-width: 768px) {
   .fa-stack {
     width: 75%;
     height: 19rem;
@@ -12,16 +61,7 @@
     right: 5rem;
     margin: 0 auto;
     padding: 5%;
-    /* transform: scale(1.5); */
-  }
-  .page-container {
-    margin: 0 auto;
-    top: 10%;
-    background-color: #f0f0f0;
-    border: 1px grey;
-    max-width: 1750px;
-    padding: 10px;
-    border: 1px solid rgb(78, 78, 78);
+    transform: scale(1.5);
   }
   @keyframes flames {
     0% {
@@ -135,68 +175,5 @@
     background-color: #fae4a8;
     border-radius: 50%;
     background-image: radial-gradient(circle at 40% 80%, #ddc997 10%, transparent 0), radial-gradient(circle at 55% 70%, #ddc997 5%, transparent 0), radial-gradient(circle at 58% 85%, #ddc997 6%, transparent 0), radial-gradient(circle at 80% 40%, #ddc997 12%, transparent 0), radial-gradient(circle at 87% 58%, #ddc997 4%, transparent 0);
-  }
-  /* Text container splash page */
-  .cta-container {
-    bottom: 8rem;
-    right: 18%;
-    overflow: hidden;
-    position: relative;
-  }
-  .first-text {
-    font-size: 2.5rem;
-    font-family: "Righteous", cursive;
-    color: #17a2b8;
-  }
-  .second-text {
-    font-size: 2.3rem;
-    font-family: "Righteous", cursive;
-    color: #17a2b8;
-  }
-  .fourth-text {
-    font-size: 2.3rem;
-    font-family: "Righteous", cursive;
-    left: 10%;
-    color: #17a2b8;
-  }
-  .App {
-    min-height: 100vh;
-    padding: 1%;
-  }
-  header {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 45rem;
-  }
-  .row h1 {
-    width: 100%;
-    text-align: center;
-    font-size: 5rem;
-    font-family: "Righteous", cursive;
-  }
-  button.btn {
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    border-radius: 15px;
-    width: 15rem;
-    transform: scale(0.8);
-    background: #fff;
-    /* fallback for browsers that don't understand rgba */
-    border: solid 2px #ff7400;
-    /* fallback for browsers that don't understand rgba */
-    background-color: #ff7400;
-    /* slighly transparent white */
-    border-color: #ff7400;
-    /*Very transparent black*/
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    box-shadow: 0 0 0 #ff7400;
-  }
-  button.btn:hover {
-    background-color: white;
-    border-color: #ff7400;
-    color: #ff7400;
   }
 }
