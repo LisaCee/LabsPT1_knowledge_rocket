@@ -49,7 +49,7 @@ class Rocket extends Component {
               onChange={this.handleInputChange}
               placeholder="ClassName"
             />
-            <Button onClick={this.handleRocket}> Get Rockets</Button>
+            <Button id="getRockets" onClick={this.handleRocket}> Get Rockets</Button>
             <Row>
               {this.props.state.rockets &&
                 this.props.state.rockets.map(unit => (

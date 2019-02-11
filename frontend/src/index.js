@@ -50,14 +50,14 @@ ReactDOM.render(
           <Route exact path="/classes" component={Classes} />
           <Route path="/createClass" component={CreateClass} />
           <Route path="/createEmail" component={SendEmail} />
-          <Elements>
+          {/* <Elements>
             <Route
               path="/billing"
               render={props => (
                 <BillingForm {...props} fontSize={elementFontSize} />
               )}
             />
-          </Elements>
+          </Elements> */}
           <Route path="/quiz2D/:className/:rocketName" component={Quiz2D} />
           <Route path="/quiz2W/:className/:rocketName" component={Quiz2W} />
           <Route path="/quiz2M/:className/:rocketName" component={Quiz2M} />
